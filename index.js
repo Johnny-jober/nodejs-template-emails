@@ -21,15 +21,15 @@ const nodemailer = require('nodemailer'),
 let users = [
     {
         name: 'Jack',
-        email: 'johnnykoo84@gmail.com',
+        email: 'jack@gmail.com',
     },
     {
         name: 'John',
-        email: 'johnnykoo84@gmail.com',
+        email: 'john@gmail.com',
     },
     {
         name: 'Joe',
-        email: 'johnnykoo84@gmail.com',
+        email: 'joe@gmail.com',
     },
 ];
 
@@ -56,7 +56,7 @@ loadTemplate('welcome', users).then((results) => {
     return Promise.all(results.map((result) => {
         sendEmail({
             to: result.context.email,
-            from: 'Me :)',
+            from: 'Me :) <your email>',
             subject: result.email.subject,
             html: result.email.html,
             text: result.email.text,
