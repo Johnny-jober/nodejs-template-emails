@@ -21,15 +21,15 @@ const nodemailer = require('nodemailer'),
 let users = [
     {
         name: 'Jack',
-        email: 'example@example.tld',
+        email: 'johnnykoo84@gmail.com',
     },
     {
         name: 'John',
-        email: 'example@example.tld',
+        email: 'johnnykoo84@gmail.com',
     },
     {
         name: 'Joe',
-        email: 'example@example.tld',
+        email: 'johnnykoo84@gmail.com',
     },
 ];
 
@@ -52,7 +52,7 @@ function loadTemplate (templateName, contexts) {
     }));
 }
 
-loadTemplate('updates-april-2017', users).then((results) => {
+loadTemplate('welcome', users).then((results) => {
     return Promise.all(results.map((result) => {
         sendEmail({
             to: result.context.email,
