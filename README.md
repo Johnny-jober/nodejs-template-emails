@@ -1,3 +1,10 @@
+# Jober team
+./creds.js 에서 개인 이메일 정보 입력 후 테스트 해 주세요 (주의!! git commit 해서 올리지 말아주세요!)
+./index.js 에서 Jack, Joe 들의 이메일을 받아서 테스트 할 수 있는 메일로 바꿔주세요
+
+# html template used
+이 예제에서는 handlebar 라는 템플릿 뷰 엔진이 사용되었습니다.
+
 # Node.JS Email Templates
 
 Sending templated emails with Node.JS.
